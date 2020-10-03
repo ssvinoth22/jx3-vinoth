@@ -17,6 +17,7 @@ cluster:
   gitServer: https://github.com
   namespace: jx
   provider: minikube
+  registry: 10.98.219.15
 environments:
 - ingress:
     domain: ""
@@ -27,6 +28,8 @@ environments:
       enabled: false
       production: false
   key: dev
+  owner: ssvinoth22
+  repository: jx3-vinoth
 - ingress:
     domain: ""
     externalDNS: false
@@ -55,6 +58,8 @@ ingress:
     enabled: false
     production: false
 kaniko: true
+pipelineUser:
+  username: jx-token-minikube
 repository: bucketrepo
 secretStorage: vault
 storage:
